@@ -131,7 +131,7 @@ command = "google-chrome-stable --new-window --window-name='chromeMgmt' https://
 name = "chromeCloud"
 class = "google-chrome"
 caption = "chromeCloud"
-command = "google-chrome-stable --new-window --window-name='chromeCloud' https://guacimara.synology.me:8981/ https://medano.synology.me:8981/ https://perseo:8384/ https://guacimara:8384/"
+command = "google-chrome-stable --new-window --window-name='chromeCloud' https://guacimara:8981/ https://medano.synology.me:8981/ https://127.0.0.1:8384/ https://guacimara:8384/"
 
 # Chrome app - AI window 
 [[run_or_raise]]
@@ -233,7 +233,7 @@ command = "firefox -P default-release --no-remote --name='firefox'"
 [[run_or_raise]]
 name = "obsidian"
 class = "obsidian"
-command = "~/.local/bin/appimages/obsidian.AppImage --no-sandbox"
+command = "~/.local/bin/appimages/obsidian.appimage --no-sandbox"
 
 # Okular app - When raised multiple times it will iterate through opened okular.
 [[run_or_raise]]
@@ -283,17 +283,17 @@ command = "keepassxc"
 [[run_or_raise]]
 name = "zapzap"
 class = "zapzap"
-command = "zapzap"
+command = "~/.local/bin/appimages/zapzap.appimage --no-sandbox"
 
 [[run_or_raise]]
 name = "telegram"
 class = "org.telegram"
-command = "telegram"
+command = "Telegram"
 
 [[run_or_raise]]
 name = "fusion360"
 caption = "Autodesk Fusion"
-command = "env 'WINEPREFIX=/home/juan/.autodesk_fusion/wineprefixes/default' wine 'C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\Autodesk\\\\Autodesk Fusion.lnk'"
+command = "~/.local/bin/fusion360.sh"
 
 [[run_or_raise]]
 name = "sketchup"
@@ -303,7 +303,8 @@ command = "/opt/google/chrome/google-chrome --profile-directory=Default --app-id
 [[run_or_raise]]
 name = "orcaslicer"
 class = "OrcaSlicer"
-command = "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=entrypoint --file-forwarding com.orcaslicer.OrcaSlicer"
+# command = "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=entrypoint --file-forwarding com.orcaslicer.OrcaSlicer"
+command = "orca-slicer"
 
 [[run_or_raise]]
 name = "onlyoffice"
