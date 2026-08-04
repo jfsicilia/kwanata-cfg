@@ -24,7 +24,7 @@
 
 [[app]]
 name = "chrome"
-caption = "@Colab"
+caption = "chromeColab"
 virtual_keys = ["vk_colab", "vk_chrome"]
 
 [[app]]
