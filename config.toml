@@ -29,6 +29,11 @@ virtual_keys = ["vk_colab", "vk_chrome"]
 
 [[app]]
 name = "chrome"
+caption = "chromeWhatsapp"
+virtual_keys = ["vk_chrome", "vk_whatsapp"]
+
+[[app]]
+name = "chrome"
 virtual_keys = ["vk_chrome"]
 
 [[app]]
@@ -179,7 +184,13 @@ command = "google-chrome-stable --new-window --window-name='chromeMisc4'"
 name = "chromeColab"
 class = "google-chrome"
 caption = "chromeColab"
-command = "google-chrome-stable --new-window --window-name='chromeColab' https://colab.research.google.com/"
+command = "google-chrome-stable --start-fullscreen --new-window --window-name='chromeColab' https://colab.research.google.com/"
+
+[[run_or_raise]]
+name = "chromeWhatsapp"
+class = "google-chrome"
+caption = "chromeWhatsapp"
+command = "google-chrome-stable --start-fullscreen --new-window --window-name='chromeWhatsapp' https://web.whatsapp.com/"
 
 # Chrome app - When raised multiple times it will iterate through opened chrome windows.
 [[run_or_raise]]
