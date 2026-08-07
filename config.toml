@@ -272,6 +272,13 @@ name = "nvim"
 caption = "(Nvim|nvim — Konsole)$"
 command = "nvim"
 
+# Tmux app - When raised multiple times it will iterate through opened tmuxs.
+[[run_or_raise]]
+name = "tmux"
+# It will find tmux running inside foot or Konsole (checking for the signature in its title) or as a stand alone app.
+caption = "^tmux"
+command = "tmux"
+
 # Claude Code app - When raised multiple times it will iterate through opened claude code apps.
 [[run_or_raise]]
 name = "claude_code"
