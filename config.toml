@@ -60,8 +60,18 @@ virtual_keys = ["vk_nvim", "vk_tmux"]
 
 [[app]]
 name = "foot"
+caption = "^herdr.*(N|n)vim$"
+virtual_keys = ["vk_nvim", "vk_herdr"]
+
+[[app]]
+name = "foot"
 caption = "^tmux"
 virtual_keys = ["vk_tmux", "vk_foot"]
+
+[[app]]
+name = "foot"
+caption = "^herdr"
+virtual_keys = ["vk_herdr", "vk_foot"]
 
 [[app]]
 name = "foot"
@@ -263,7 +273,7 @@ command = "libreoffice"
 name = "terminal"
 class = "foot"
 # Don't want to iterate through terminal windows where nvim or claude code is running.
-caption = "^((?!(tmux|nvim|claude code)).)*$"
+caption = "^((?!(tmux|nvim|herdr|claude code)).)*$"
 
 # Nvim app - When raised multiple times it will iterate through opened nvims.
 [[run_or_raise]]
@@ -278,6 +288,13 @@ name = "tmux"
 # It will find tmux running inside foot or Konsole (checking for the signature in its title) or as a stand alone app.
 caption = "^tmux"
 command = "tmux"
+
+# Herdr app - When raised multiple times it will iterate through opened herdrs.
+[[run_or_raise]]
+name = "herdr"
+# It will find herdr running inside foot or Konsole (checking for the signature in its title) or as a stand alone app.
+caption = "^herdr"
+command = "herdr"
 
 # Claude Code app - When raised multiple times it will iterate through opened claude code apps.
 [[run_or_raise]]
