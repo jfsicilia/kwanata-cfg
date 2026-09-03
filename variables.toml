@@ -1,0 +1,49 @@
+# kwanata.py reads this file (see --variables).
+
+# *************** KWANATA - client-settable variables ******************
+#
+# These variables are set/unset by Kanata via push messages:
+#
+#   (push-msg "SET:<name>")     boolean -> true      (or "SET:!<name>" to flip)
+#   (push-msg "UNSET:<name>")   boolean -> false
+#   (push-msg "SET:<name>=<value>")   string variable only
+#
+# Each [table] below defines one variable:
+#
+#   default   Required. Its initial value AND its type:
+#               true / false  -> boolean variable (toggled, tray icon
+#                                toggles color).
+#               "some text"   -> string variable (only "SET:name=value",
+#                                no unset/toggle; tray icon shows the value).
+#   label     Optional. Short badge text on the variable's tray icon
+#             (see kwanata_tray.py). Booleans without a label fall back to
+#             the name's first 3 letters, upper-cased. Ignored for string
+#             variables (their icon shows the value).
+#
+# Names not defined here are unknown: any SET:/UNSET: message for them is
+# ignored. If this file is missing, no variables are defined at all.
+
+# Mirrors vk_numpad (actions_keyb.kbd): "STD" or "NUMPAD" depending on
+# whether the numpad overlay is on.
+[keyboard]
+default = "STD"
+
+# Mirrors vk_alt_chars (actions_keyb.kbd): "US" or "ESP" depending on
+# whether Spanish character composition is on.
+[lang]
+default = "US"
+
+# Gates POPUP_HELP only; OPEN_HELP:<keys> always works regardless.
+[popup_help]
+default = false
+label = "HLP"
+
+# Show the backstage combos for the combos in the help window.
+[verbose]
+default = false
+label = "VERB"
+
+# Inverts apps sort order.
+[invert]
+default = false
+label = "REV"
