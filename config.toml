@@ -54,6 +54,11 @@ name = "soffice.bin"
 virtual_keys = ["vk_okular"]
 
 [[app]]
+name = "okular"
+class = "org.kde.okular"
+virtual_keys = ["vk_okular"]
+
+[[app]]
 name = "foot"
 caption = "^tmux.*(N|n)vim$"
 virtual_keys = ["vk_nvim", "vk_tmux"]
