@@ -260,7 +260,7 @@ class = "firefoxColab"
 command = "firefox -P colab --no-remote --name='firefoxColab' https://colab.research.google.com/"
 
 # Firefox app - When raised multiple times it will iterate through opened chrome windows.
-[[run_or_raise]]
+[[run_or_raise]] 
 name = "firefox"
 class = "firefox"
 command = "firefox -P default-release --no-remote --name='firefox'"
@@ -270,6 +270,11 @@ command = "firefox -P default-release --no-remote --name='firefox'"
 name = "obsidian"
 class = "obsidian"
 command = "~/.local/bin/appimages/obsidian.appimage --no-sandbox"
+
+[[run_or_raise]]
+name = "xournalpp"
+class = "com.github.xournalpp.xournalpp"
+command = "xournalpp"
 
 # Okular app - When raised multiple times it will iterate through opened okular.
 [[run_or_raise]]
