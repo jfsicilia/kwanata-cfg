@@ -154,7 +154,7 @@ virtual_keys = ["vk_kiwix"]
 name = "chromeMgmt"
 class = "google-chrome"
 caption = "chromeMgmt"
-command = "google-chrome-stable --new-window --window-name='chromeMgmt' https://mail.google.com https://contacts.google.com https://calendar.google.com"
+command = "google-chrome-stable --new-window --window-name='chromeMgmt' https://mail.google.com https://contacts.google.com https://calendar.google.com https://keep.google.com"
 
 # Chrome app - Cloud window 
 [[run_or_raise]]
