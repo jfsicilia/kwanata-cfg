@@ -96,7 +96,8 @@ virtual_keys = ["vk_nvim"]
 [[app]]
 name = "foot"
 caption = "^Yazi"
-virtual_keys = ["vk_yazi", "vk_foot"]
+# virtual_keys = ["vk_yazi", "vk_foot"]
+virtual_keys = ["vk_yazi"]
 
 [[app]]
 name = "konsole"
