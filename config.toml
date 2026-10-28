@@ -162,7 +162,7 @@ command = "google-chrome-stable --new-window --window-name='chromeMgmt' https://
 name = "chromeCloud"
 class = "google-chrome"
 caption = "chromeCloud"
-command = "google-chrome-stable --new-window --window-name='chromeCloud' https://guacimara:9981/ https://medano.synology.me:8981/ https://teseo:8384/ https://guacimara:9384/ https://guacimara:3001"
+command = "google-chrome-stable --new-window --window-name='chromeCloud' https://guacimara:9981/ https://medano.synology.me:8981/ https://teseo:8384/ https://guacimara:9384/ https://guacimara:3001 http://zeus:2283"
 
 # Chrome app - AI window 
 [[run_or_raise]]
