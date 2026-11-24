@@ -110,6 +110,11 @@ caption = "nvim — Konsole$"
 virtual_keys = ["vk_nvim"]
 
 [[app]]
+name = "konsole"
+caption = "yazi — Konsole$"
+virtual_keys = ["vk_yazi"]
+
+[[app]]
 name = "foot|konsole"
 virtual_keys = ["vk_foot"]
 
