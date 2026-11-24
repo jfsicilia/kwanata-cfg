@@ -160,14 +160,14 @@ virtual_keys = ["vk_kiwix"]
 name = "chromeMgmt"
 class = "google-chrome"
 caption = "chromeMgmt"
-command = "google-chrome-stable --new-window --window-name='chromeMgmt' https://mail.google.com https://contacts.google.com https://calendar.google.com https://keep.google.com"
+command = "google-chrome-stable --new-window --window-name='chromeMgmt' https://mail.google.com https://todo.pyroflexia.com:8443 https://calendar.google.com https://contacts.google.com https://keep.google.com"
 
 # Chrome app - Cloud window 
 [[run_or_raise]]
 name = "chromeCloud"
 class = "google-chrome"
 caption = "chromeCloud"
-command = "google-chrome-stable --new-window --window-name='chromeCloud' https://guacimara:9981/ https://medano.synology.me:8981/ https://teseo:8384/ https://guacimara:9384/ https://guacimara:3001 http://zeus:2283"
+command = "google-chrome-stable --new-window --window-name='chromeCloud' https://guacimara:9981/ https://medano.synology.me:8981/ https://teseo:8384/ https://guacimara:9384/ http://localhost:18384/ https://guacimara:3001 http://zeus:2283"
 
 # Chrome app - AI window 
 [[run_or_raise]]
@@ -181,7 +181,7 @@ command = "google-chrome-stable --new-window --window-name='chromeAI' https://ch
 name = "chromeBanks"
 class = "google-chrome"
 caption = "chromeBanks"
-command = "google-chrome-stable --new-window --window-name='chromeBanks' https://particulares.bancosantander.es/oneweb/ https://bancaonline.bankinter.com/gestion/login.xhtml https://www.caixabank.es/particular/home/particulares_es.html https://www.arquia.com/es-es/ https://www.revolut.com/"
+command = "google-chrome-stable --new-window --window-name='chromeBanks' https://particulares.bancosantander.es/oneweb/ https://bancaonline.bankinter.com/gestion/login.xhtml https://www.openbank.es/ https://www.arquia.com/es-es/ https://www.revolut.com/ https://traderepublic.com/en-es https://www.caixabank.es/particular/home/particulares_es.html"
 
 # Chrome app - Misc window 
 [[run_or_raise]]
